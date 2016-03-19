@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Workout:</strong>
+  <%= @stroke.workout %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @stroke.type %>
+</p>
+
+<p>
+  <strong>Laps:</strong>
+  <%= @stroke.laps %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @stroke.calories %>
+</p>
+
+<%= link_to 'Edit', edit_stroke_path(@stroke) %> |
+<%= link_to 'Back', strokes_path %>

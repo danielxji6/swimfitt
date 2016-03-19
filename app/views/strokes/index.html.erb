@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Strokes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workout</th>
+      <th>Type</th>
+      <th>Laps</th>
+      <th>Calories</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @strokes.each do |stroke| %>
+      <tr>
+        <td><%= stroke.workout %></td>
+        <td><%= stroke.type %></td>
+        <td><%= stroke.laps %></td>
+        <td><%= stroke.calories %></td>
+        <td><%= link_to 'Show', stroke %></td>
+        <td><%= link_to 'Edit', edit_stroke_path(stroke) %></td>
+        <td><%= link_to 'Destroy', stroke, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stroke', new_stroke_path %>

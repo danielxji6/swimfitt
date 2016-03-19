@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get '/api/users/:user_id/workouts', to: 'workouts#index'
   get '/api/users/:user_id/workouts/:id', to: 'workouts#show'
   post '/api/users/:user_id/workouts', to: 'workouts#create'
+  patch '/api/users/:user_id/workouts/:id', to: 'workouts#update'
+  delete '/api/users/:user_id/workouts/:id', to: 'workouts#destory'
+
 end

@@ -12,15 +12,6 @@ class WorkoutsController < ApplicationController
   def show
   end
 
-  # GET /workouts/new
-  def new
-    @workout = Workout.new
-  end
-
-  # GET /workouts/1/edit
-  def edit
-  end
-
   # POST /workouts
   # POST /workouts.json
   def create
@@ -28,10 +19,9 @@ class WorkoutsController < ApplicationController
 
     respond_to do |format|
       if @workout.save
-        format.html { redirect_to @workout, notice: 'Workout was successfully created.' }
+        currntUser.workouts << @workout
         format.json { render :show, status: :created, location: @workout }
       else
-        format.html { render :new }
         format.json { render json: @workout.errors, status: :unprocessable_entity }
       end
     end
@@ -42,10 +32,8 @@ class WorkoutsController < ApplicationController
   def update
     respond_to do |format|
       if @workout.update(workout_params)
-        format.html { redirect_to @workout, notice: 'Workout was successfully updated.' }
         format.json { render :show, status: :ok, location: @workout }
       else
-        format.html { render :edit }
         format.json { render json: @workout.errors, status: :unprocessable_entity }
       end
     end
@@ -56,7 +44,6 @@ class WorkoutsController < ApplicationController
   def destroy
     @workout.destroy
     respond_to do |format|
-      format.html { redirect_to workouts_url, notice: 'Workout was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

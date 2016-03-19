@@ -12,8 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.text_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :diff %><br>
+    <%= f.number_field :diff %>
   </div>
   <div class="field">
     <%= f.label :start_time %><br>
@@ -22,6 +30,54 @@
   <div class="field">
     <%= f.label :end_time %><br>
     <%= f.datetime_select :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :s1_type %><br>
+    <%= f.text_field :s1_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s1_dis %><br>
+    <%= f.number_field :s1_dis %>
+  </div>
+  <div class="field">
+    <%= f.label :s2_type %><br>
+    <%= f.text_field :s2_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s2_dis %><br>
+    <%= f.number_field :s2_dis %>
+  </div>
+  <div class="field">
+    <%= f.label :s3_type %><br>
+    <%= f.text_field :s3_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s3_dis %><br>
+    <%= f.number_field :s3_dis %>
+  </div>
+  <div class="field">
+    <%= f.label :s4_type %><br>
+    <%= f.text_field :s4_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s4_dis %><br>
+    <%= f.number_field :s4_dis %>
+  </div>
+  <div class="field">
+    <%= f.label :s5_type %><br>
+    <%= f.text_field :s5_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s5_dis %><br>
+    <%= f.number_field :s5_dis %>
+  </div>
+  <div class="field">
+    <%= f.label :s6_type %><br>
+    <%= f.text_field :s6_type %>
+  </div>
+  <div class="field">
+    <%= f.label :s6_dis %><br>
+    <%= f.number_field :s6_dis %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20160319211520) do
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
-    t.string   "fullName"
+    t.string   "full_name"
     t.float    "weight"
     t.float    "height"
     t.integer  "age"

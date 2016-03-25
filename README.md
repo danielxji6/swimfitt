@@ -19,5 +19,8 @@
 ## Prototype
 <a href="https://xd.adobe.com/view/c8aba4b7-07c6-473b-4891-9a7485871d19/" target="_blank">Swimfitt</a>
 
+## Mobile repo
+<a href="https://github.com/Billy1301/GA-Hackathon-SwimFitt" target="_blank">Swinfitt mobile by Bill Ly</a>
+
 ## LinkedIn
  <a href="https://www.linkedin.com/in/daniellwo" target="_blank">Daniel Lwo</a>
